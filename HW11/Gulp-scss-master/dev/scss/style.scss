@@ -1,0 +1,46 @@
+@import './variables';
+@import './components';
+@import './normalize';
+@import './fonts';
+@import './extens';
+@import './base';
+@import './buttons';
+@import './header';
+
+
+.card {
+	display: flex;
+	flex-direction: column;
+	background-color: $gray;
+	padding: $card-pdd;
+	border-radius: $card-br;
+	overflow: hidden;
+
+	&__type {
+		align-self: start;
+		padding: $pdding;
+		background-color: $dark-blu;
+		border-radius: $b-rds;
+		font-weight: bold;
+		margin: 0px;
+		color: $white;
+		z-index: 3;
+
+	}
+
+	&__type:hover {
+		background-color: #c51d33;
+		color: black;
+	}
+
+	&__img {
+		transition: .5s;
+		
+		&:hover {
+			transform: scale(1.3);
+			z-index: 2;
+			transition: .5s;
+		}
+	}
+
+}

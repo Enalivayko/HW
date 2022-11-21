@@ -1,0 +1,74 @@
+.title {
+	font-family: 'yellowtailregular', 'open_sansregular', 'robotoregular', sans-serif;
+	color: #7EB693;
+	font-size: 36px;
+	line-height: 64px;
+	font-weight: 400;
+}
+
+.card-title {
+	font-family:'robotoregular', sans-serif;
+	color: $blu;
+	max-width: 100%;
+	font-size: 22px;
+	line-height: 35px;
+	padding-top: $cd__tl-pt;
+	margin-top: $cd__tl-mt;
+	margin-bottom: $cd__tl-mb;
+	transition: .4s;
+	align-self: self-start;
+	z-index: 3;
+	a {
+		text-decoration: none;
+		color: $blu;
+	}
+
+	&:hover a {
+		color: $red;
+	}
+
+}
+
+.card-footer {
+	display: flex;
+	justify-content: space-between;
+	padding-top: $card-ft-pt;
+	font-size: 17px;
+	border-top: 1px solid $gray-2;
+	font-weight: 400;
+
+	&_star {
+		@extend %ulreset;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&_star:hover .Rating--Star__active {
+		transform: scale(1.1);
+	}
+}
+
+.spec_price {
+	color: $blu;
+	font-size: 18px;
+	
+	:first-child {
+		color: $gray-1;
+		text-decoration: line-through;
+		
+	}
+
+	:nth-child(2) {
+		font-weight: bold;
+	}
+}
+
+.Rating--Star {
+	filter: grayscale(100%);
+	opacity: .3;
+
+	&__active {
+		filter: grayscale(0);
+		opacity: 1;
+	}
+}
