@@ -7,7 +7,6 @@
 @import './buttons';
 @import './header';
 
-
 .card {
 	display: flex;
 	flex-direction: column;
@@ -25,7 +24,6 @@
 		margin: 0px;
 		color: $white;
 		z-index: 3;
-
 	}
 
 	&__type:hover {
@@ -35,12 +33,11 @@
 
 	&__img {
 		transition: .5s;
-		
+
 		&:hover {
 			transform: scale(1.3);
 			z-index: 2;
 			transition: .5s;
 		}
 	}
-
 }
